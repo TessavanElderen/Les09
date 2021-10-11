@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>CheatSheet</title>
+	<style>
+	p	{
+			line-height: normal; margin:0px;
+		}
+	</style>
+	</head>
+	
+	
+	<body style="font-family:Helvetica; background-color:#EDC9AF;"> 
+		<h1>CheatSheet</h1>
+		<p><b>Openen en aanmaken van een map in de command Prompt (cmd):</b></p> 
+		<p>1. Ga naar Windows. 
+		<p>2. Ga naar de zoekbalk.</p>
+		<p>3. Typ cmd in en druk op enter.</p>
+		<ul>
+			<li>3a. De command Prompt opent.</li> 
+			<li>3b. Met het commando cd kan je kan je naar de volgende map gaan.</li>
+			<li>3c. Met het commando cd ..  ga je een mapje terug.</li>  
+			<li>3d. Als je wil weten waar je mappen staan dan kan je het commando dir gebruiken.</li> 
+			<li>3e. Om een nieuwe map aan te maken kan je het commando mkdir. (bestand aanmaken) gebruiken.</li> 
+		</ul>	
+		<br>	
+		<b>Een snellere manier:</b>
+		<p>1. Klik het icoon bestanden aan.</p>  
+		<p>2. Zoek het mapje op waar een extra map moet worden toegevoegd.</p> 
+		<p>3. Klik in de adresbar en typ daar cmd/enter.</p> <ul>
+			<p><li>3a. Hiermee kun je de cd stap voortaan overslaan.</li></p>	
+		</ul>
+		<br>
+		<p><b>Een tekstbestand aanmaken:</b></p>
+		<p>1. Ga naar je map.</p><ul>
+			<p><li>1a. Vind je dat het cd commando te lang duurt, doe het dan op de snellere manier).</li></p></ul>  
+		<p>2. Klik in de adresbar en typ daar cmd/enter.</p>
+		<p>3. Vul notepad test.txt en druk op enter (test is optioneel, je kunt hier een eigen naam invullen).</p>
+		<p>4. Je ziet een PopUp van Notepad met de tekst: “Cannot find the test.txt file. Do you want create a new file? Yes or No.”</p>   
+		<p>5. Klik op Yes.</p>
+		<p>6. Creeër je tekst.</p> 
+		<p>7. Sla je het document op met Ctrl S.</p>
+		<br>
+		<p><b>Het aanmaken van een repository:</b></p>
+		<p>1. Ga in cmd naar de map waarin het notepad bestand is opgeslagen.</p>
+		<p>2. Typ git status.</p><ul>
+			<p><li>2a. Je bestand wordt zichtbaar in rood.</li></p>
+			</ul>
+		<p>3. Typ het commando git init in.</p>
+			<p>3a. Dit commando zorgt ervoor dat een git bestand wordt aangemaakt.</p> 
+		<p>4. Typ het commando git status in en druk op enter.</p><ul>
+			<p><li>4a. Je ziet main of master.</li></p>  
+			<p><li>4b. Als master verschijnt: Typ git branch -m main/enter. (Resultaat: Main verschijnt)</li></p>
+			<p><li>4c. Als main verschijnt: Je kunt door naar de volgende stap.</li></p> 
+			<p><li>4d. Er kan een PopUp verschijnen waarin word gevraagd naar mail en 	Username.</li></p>  
+			<p><li>4e. In dat geval: kopieer deze vraag en plak deze vraag in de onderste regel.</li></p>
+			<p><li>4f. Vervang de mail & username in de onderste regel met je eigen mail & naam.</li></p></ul>
+		<br>
+		<b>Bestand zetten in de repository:</b> 
+		<p>1. Mocht je nog geen Notepad hebben aangemaakt, maak er dan een aan (zie “Een tekstbestand aanmaken” ).</p> 
+		<p>2. Typ git status.</p><ul> 
+			<p><li>2a. De tekst in de cmd kan rood zijn. (Het bestand die je heb gemaakt in notepad is nieuw of aangepast.)</li></p></ul>
+		<p>3. Typ (als de test rood is) typ git add . Klik op enter. </p> <ul>
+			<p><li>3a. Je zorgt er dan voor dat hij opgeslagen wordt in de cmd.</li></p> </ul>
+		<p>4. Controleer of de tekst groen is geworden met git status.</p> 
+		<p>5. Typ git commit -m “naam”.</p><ul>
+			<p><li>5a. Dat zorgt ervoor dat het in de cmd word opgeslagen.</li></p></ul>
+		<p>6. Typ daarna weer git status in.</p>
+		<br>
+		<b>Updaten van de repository:</b>
+		<p>1. Je moet nu kunnen zien dat de tekst in Notepad in main zit.</p><ul>
+		<p><li>	1c. Heb je iets veranderd in Notepad volg: (‘Bestand zetten in de repository’).</li></p> 
+		<p><li>	1d. Typ git status/enter.</li></p>
+		<p><li>	1e. Typ git commit -m “naam”  en klik op enter.</li></p>  
+		<p><li>	1f. Typ git status en klik op enter.</li></p></ul>
+		<p>2.  Met git log & git log --oneline kan je aanpassingen zien in een rij.</li></p><ul>
+		<p><li>	2a. Je hoeft het dus ook niet te gebruiken. Het mag.</li></p></ul>
+		<br>
+		<b>GitHub account aanmaken & Upload Notepad het in GitHub.</b> 
+		<p>1. Maakt een nieuw account aan in GitHub.</p>  
+		<p>2. Maak een nieuw Repository aan in GitHub.</p>  
+		<p>3. Ga naar de pagina in GitHub die je heb geopent.</p>  
+		<p>5. Je ziet (‘...or push an exiting repository from the command line’).</p><ul> 
+			<p><li>5a. Kopieer de eerste zin met de mail.</li></p>   
+			<p><li>5b. Plak het in je cmd.</li></p>  
+			<p><li>5c. Staat het al in main? (tweede link hoeft niet)</li></p></ul>  
+		<p>6. Alles groen?</p><ul>   
+			<p><li>6a. Typ git push -u origin main/enter.</li></p></ul>  
+		<p>7. Refesh Github.</p> 
+		<p>8. Dan staat je Notepad gegevens in Github.</p> 		
+	</body>
+</html>
